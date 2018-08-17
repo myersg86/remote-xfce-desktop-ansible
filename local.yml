@@ -10,7 +10,7 @@
 
   tasks:
   - include: roles/common/tasks/external-ip.yml
-  - include: roles/common/tasks/apt/update.yml
-  - include: roles/common/tasks/apt/upgrade.yml
-  - include: roles/common/tasks/apt/cleanup.yml
+  - include: roles/common/tasks/update.yml
+  - include: roles/common/tasks/upgrade.yml
+  - include: roles/common/tasks/cleanup.yml
   - include: roles/common/tasks/deb.yml
