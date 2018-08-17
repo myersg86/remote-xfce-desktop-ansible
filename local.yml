@@ -1,0 +1,17 @@
+# Standards: 2.5
+---
+# local.yml playbook
+- hosts: 127.0.0.1 localhost
+  become: yes
+  become_method: su
+  remote_user: root
+  become_user: root
+  connection: local
+
+  tasks:
+  - include: roles/common/tasks/external-ip.yml
+  - include: roles/common/tasks/debug.yml
+  - include: roles/common/tasks/apt/update.yml
+  - include: roles/common/tasks/apt/upgrade.yml
+  - include: roles/common/tasks/apt/cleanup.yml
+  - include: roles/common/tasks/deb.yml
