@@ -8,9 +8,11 @@
     update_cache: yes
   become: yes
   with_items:
-    - xfce4
-    - xfce4-goodies
-    - ubuntu-restricted-extras
+  - git core
+  - vim
+  - xfce4
+  - xfce4-goodies
+  - ubuntu-restricted-extras
 # - name: home xsession file
 #   copy:
 #     src: xsession
