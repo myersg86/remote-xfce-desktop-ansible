@@ -1,7 +1,7 @@
-# Standards: 2.5
+# Standards: 2.6
 ---
-#
-- name: install desktop packages
+# Install xfce desktop
+- name: install xfce desktop packages
   apt:
     name: '{{ item }}'
     state: present
